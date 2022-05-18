@@ -45,7 +45,6 @@ func printOutIncrementStyle(jumlahBaris int) {
 }
 
 func printOutDecrementStyle(jumlahBaris int) {
-	// TODO: Buat output untuk decrement style
 	/**
 	55555
 	4444
