@@ -40,6 +40,12 @@ func printOutOddNumber(limitCounter int) {
 		total := 1
 		for y := 1; y <= x; y += 2 {
 			total *= y
+			// Pengkondisian dibawah ini bisa dibuat menjadi seperti ini juga
+			// if y == x {
+			// ...
+			// } else {
+			// ...
+			// }
 			if isLastIndex := y == x; isLastIndex {
 				fmt.Printf("%d=%d", y, total)
 			} else {
