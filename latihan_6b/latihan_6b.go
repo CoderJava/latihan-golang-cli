@@ -61,7 +61,8 @@ func main() {
 				harga = 300000000
 			}
 		default:
-			fmt.Println("Kode rumah tidak valid")
+			fmt.Print("Kode rumah tidak valid")
+			checkIsLastIndex(index, len(listData)-1)
 			continue
 		}
 
@@ -75,9 +76,12 @@ func main() {
 		fmt.Printf("Sisa angsuran\t\t: Rp.%d\n", sisaAngsuran)
 		fmt.Printf("Harga\t\t\t: Rp.%d\n", harga)
 		fmt.Printf("Total Pembayaran\t: Rp.%d", total)
+		checkIsLastIndex(index, len(listData)-1)
+	}
+}
 
-		if index != len(listData)-1 {
-			fmt.Print("\n\n")
-		}
+func checkIsLastIndex(index int, length int) {
+	if index != length {
+		fmt.Print("\n\n")
 	}
 }
